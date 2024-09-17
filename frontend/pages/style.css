@@ -53,16 +53,17 @@ h3 {
   color: #777;
 }
 
-#cheq-rti-response-homepage, #cheq-rti-response-subscribe {
+#cheq-rti-response-homepage,
+#cheq-rti-response-subscribe {
   margin: 0 100px 100px 100px;
-  
+
   h4 {
     font-size: 1.1em;
     margin-bottom: 1em;
     color: black;
     text-align: left;
   }
-  
+
   pre {
     color: white;
     background-color: #FE0072;
@@ -208,3 +209,8 @@ pre {
   width: 25%;
 }
 
+#btn-logout {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+}
