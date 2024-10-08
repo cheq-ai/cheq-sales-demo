@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 const { eventsTypes } = require("@cheq.ai/cheq-middlewares");
 const { createRtiMiddleware, createSlpMiddleware } = require('./config/config-factory');
 const { auth } = require('express-openid-connect'); // Auth0
