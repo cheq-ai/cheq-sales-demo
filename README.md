@@ -5,7 +5,7 @@ This site should be publicly available at URL_ADDRESS_HERE
 
 ## Getting Started
 
-run locally: npm run start -> go to http://localhost:5000
+run locally: npm run start -> go to http://localhost:5000 OR http://localhost:5001
 
 ## Behind the Scenes
 
