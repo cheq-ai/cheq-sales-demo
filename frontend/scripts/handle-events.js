@@ -47,3 +47,35 @@ async function handleSubmit(event, sessionSyncMode) {
 }
 
 
+// Function handling the "Add to Basket" button
+
+async function handleSignin(event, sessionSyncMode) {
+  event.preventDefault();
+
+  const formData = new FormData(event.target);
+  const formObject = Object.fromEntries(formData.entries());
+  formObject["RequestId"] = sessionStorage.getItem("RequestId");
+
+  try {
+    const response = await fetch(`/form-submit-${sessionSyncMode}`, {
+      method: "POST",
+      body: JSON.stringify(formObject),
+      headers: {
+        "Content-Type": "application/json",
+        "User-Agent": navigator.userAgent,
+        "cookie": document.cookie?.split('; ').find(part => part.startsWith('_cheq_rti=')) || undefined,
+      },
+    });
+
+    if (response.ok) {
+      const data = await response.json();
+
+      document.getElementById("signin_response").textContent = JSON.stringify(data,null,2);
+    } else {
+      console.error("Error submitting form:", response.statusText);
+      document.getElementById("signin_response").textContent = JSON.stringify(response);
+    }
+  } catch (error) {
+    document.getElementById("signin_response").textContent = JSON.stringify(error);
+  }
+}
