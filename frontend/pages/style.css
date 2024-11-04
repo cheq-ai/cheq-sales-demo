@@ -81,6 +81,34 @@ button:hover {
   background-color: #d40060;
 }
 
+.embed {
+  background-color: #a7a0a0;
+  padding: 50px 0;
+  width: 100%;
+  height: 700px;
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      }
+iframe {
+  float: center;
+  position: relative;
+  overflow: hidden;
+  width: 780px;
+  height: 700px;
+  letter-spacing: 3px;
+      }
+}
+
+.embed .ifra {
+  background-color: #fff;
+  padding: 50px 0;
+  width: 100%;
+}
+
 .products {
   background-color: #fff;
   padding: 50px 0;

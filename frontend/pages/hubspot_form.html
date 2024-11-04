@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pages/style.css">
+    <title>Dog Accessories Store!</title>
+    <script async src="https://ob.dev.7roundprince.com/i/d7428fa06242ed9fdf2b136e70837e35.js" data-ch="cheq4ppc" class="ct_clicktrue_49472" data-jsonp="onCheqResponse"></script>
+    <script src="../scripts/ui-script.js"></script>
+    <script src="../scripts/on-cheq-response.js"></script>
+    <script src="../scripts/handle-events.js"></script>
+    <script>
+        function toggleRTIResponse() {
+            var x = document.getElementById("cheq-rti-response-homepage");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+
+
+    <section class="hero">
+        <div class="container">
+            <h2>Ready to fill out a form?</h2>
+            <p>Explore the best accessories for your furry friend and see how our detection works in action.</p>
+            <header class="header">
+                <div class="container">
+                    <nav>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="../#products">Shop</a></li>
+                            <li><a href="../#tab-defend">Defend</a></li>
+                            <li><a href="../#tab-formguard">Form Guard</a></li>
+                            <li><a href="/logout" id="btn-logout">Logout</a></li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <button onclick="toggleRTIResponse()">Toggle RTI Response</button>
+        </div>
+    </section>
+
+    <section id="cheq-rti-response-homepage" class="content-section" style="display: none">
+        <div class="container">
+            <h4>HOMEPAGE RTI Response:</h4>
+            <pre><span><%- rtiResString %></span></pre>
+        </div>
+    </section>
+
+
+    #embedded iframe 
+    <section id="embed" class="embed">
+        <div class="container">
+            <iframe width="560" height="315" src="https://www.examples.com" title="Examples"></iframe>
+        </div>
+    </section>
+            
+            
+
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Dog Accessories Store. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
