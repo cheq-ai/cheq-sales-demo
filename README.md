@@ -1,7 +1,7 @@
-# Cheq Adserver Automation Demo Site
+# Cheq Sales Demo  Site
 
 This is a simple demo site that demonstrates cheq's adserver/core functionality.    
-This site should be publicly available at URL_ADDRESS_HERE   
+This site should be publicly available at (https://particular-dormouse-cheq-f50da77f.koyeb.app/hubspot_form)  
 
 ## Getting Started
 
@@ -23,3 +23,9 @@ Host: https://app.koyeb.com/
 Demo site repo: https://github.com/cheq-ai/cheq-sales-demo
 rti middleware repo: https://github.com/cheq-ai/cheq-middlewares
 rti middleware npm: https://www.npmjs.com/package/@cheq.ai/cheq-middlewares?activeTab=code
+
+
+## Demo actions:
+1. Manual detection - first detection
+2. click "add to cart" to get second detection and a CHEQ form
+3. Hubspot form submit
