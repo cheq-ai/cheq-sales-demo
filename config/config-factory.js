@@ -8,7 +8,7 @@ function createRtiMiddleware(sessionSyncMode, apiVersion, eventType, blockingAct
     apiKey: process.env.API_KEY,
     tagHash: process.env.TAG_HASH,
     apiVersion,
-    apiEndpoint: "https://obs.dev.cheqzone.com",
+    apiEndpoint: "https://obs.cheqzone.com",
     mode: blockingActive ? "blocking" : "monitoring",
     timeout: null,
     threatTypesCodes: {
@@ -30,7 +30,7 @@ function createSlpMiddleware(mode, sessionSyncMode, apiVersion, eventType) {
     apiKey: process.env.API_KEY,
     tagHash: process.env.TAG_HASH,
     apiVersion,
-    apiEndpoint: "https://obs.dev.cheqzone.com",
+    apiEndpoint: "https://obs.cheqzone.com",
     mode,
     timeout: null,
     sessionSyncMode, // banRti OR rtiCookie OR requestId OR none
