@@ -9,6 +9,15 @@
     <script src="../scripts/ui-script.js"></script>
     <script src="../scripts/on-cheq-response.js"></script>
     <script src="../scripts/handle-events.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JDHXJX55V7"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JDHXJX55V7');
+    </script>
     <script>
         function toggleRTIResponse() {
             var x = document.getElementById("cheq-rti-response-homepage");
@@ -54,12 +63,10 @@
 
 
 <!--Embedded hubspot form -->
+<!--
 <h2> Please fill out our HUBSPOT contact form so we can reach out - if you are a real person... </h2>
     <section id="embed" class="ifa">
         <div class="container">
-            <!--
-            <iframe width="560" height="315" src="https://www.examples.com" title="Examples"></iframe>
-            -->
             <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
             <script>
              hbspt.forms.create({
@@ -69,8 +76,24 @@
             </script>
         </div>
     </section>
-            
-            
+    
+-->
+
+    <h2> Please fill out our HUBSPOT contact form so we can reach out - if you are a real person... </h2>
+    <section id="embed" class="ifa">
+        <div class="container">
+            <!--
+            <iframe width="560" height="315" src="https://www.examples.com" title="Examples"></iframe>
+            -->
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+            <script>
+              hbspt.forms.create({
+                portalId: "48028475",
+                formId: "ab1694a0-6f8b-4f08-96a0-615b192f7a45"
+              });
+            </script>
+        </div>
+    </section>
 
 
 
